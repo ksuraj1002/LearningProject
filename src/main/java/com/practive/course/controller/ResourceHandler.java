@@ -64,10 +64,10 @@ public class ResourceHandler {
 		return "redirect:/"+credential.getRoles().toString().toLowerCase()+"/dashboard";
 	}
 	
-	/*@GetMapping("/failure")
+	@GetMapping("/failure")
 	public String getFailure() {
 		return "failure";
-	}*/
+	}
 	
 	@GetMapping("/login")
 	public String getLogin(Optional<String> errors ) {
