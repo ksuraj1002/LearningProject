@@ -15,6 +15,7 @@ import com.practive.course.repository.StudentRepository;
 public class DataLoader implements ApplicationListener<ContextRefreshedEvent>  {
 	@Autowired BCryptPasswordEncoder passwordEncoder;
 	@Autowired StudentRepository studentRepo;
+	
 	@Override
 	public void onApplicationEvent(ContextRefreshedEvent event) {
 		Credentials credential=new Credentials();
